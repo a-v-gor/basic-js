@@ -20,8 +20,7 @@ const { NotImplementedError } = require('../extensions/index.js');
     if (arr2.includes(item)) {
       result.push(item);
       arr1.splice(i,1);
-      const index2 = arr2.indexOf(item);
-      arr2.splice(index2,1);
+      arr2.splice(arr2.indexOf(item),1);
       i--;
     }
   }
